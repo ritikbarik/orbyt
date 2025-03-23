@@ -134,7 +134,7 @@ ol {
     font-size: 1.2rem;
     z-index: 1000;
     box-shadow: var(--box-shadow-md);
-    transition: transform var(--transition-duration) ease, background-color var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+    transition: transform var(--transition-duration) ease, background-color var(--transition-duration) ease, box-shadow var(--box-shadow-md);
 }
 
 .theme-toggle:hover {
@@ -288,7 +288,7 @@ ol {
     border-radius: var(--border-radius);
     border: 1px solid var(--card-border);
     box-shadow: var(--box-shadow-md);
-    transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+    transition: transform var(--transition-duration) ease, box-shadow var(--box-shadow-duration) ease;
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
 }
@@ -860,4 +860,8 @@ select.is-invalid:focus {
   color: #062c33;
 }
 
-.alert-ligh
+.alert-light {
+  color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}
