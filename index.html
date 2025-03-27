@@ -35,25 +35,72 @@
     </div>
   </header>
 
-  <!-- Features Section -->
-  <section class="features">
+  <!-- Feature Tabs Section -->
+  <section class="feature-tabs">
     <div class="container">
-      <h2 class="section-title">Key Features</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <img src="images/matching-icon.png" alt="Matching Icon" class="feature-icon">
-          <h3 class="feature-title">Campus-Based Matching</h3>
-          <p class="feature-description">Connect with students from your college or nearby institutions.</p>
+      <h2 class="section-title">Explore Orbyt's Key Features</h2>
+      <p class="section-subtitle">Connect, collaborate, and thrive with Orbyt - your campus, your connections.</p>
+
+      <!-- Tab Navigation -->
+      <div class="tab-nav">
+        <button class="tab-button active" data-tab="campus-matching">Campus-Based Matching</button>
+        <button class="tab-button" data-tab="study-buddy">Study Buddy Finder</button>
+        <button class="tab-button" data-tab="mentorship">Mentorship Program</button>
+        <button class="tab-button" data-tab="events-groups">Events & Groups</button>
+        <button class="tab-button" data-tab="marketplace">Buy & Sell Marketplace</button>
+        <button class="tab-button" data-tab="video-chat">Video Chat & Messaging</button>
+        <button class="tab-button" data-tab="campus-stories">Campus Stories</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <div class="tab-panel active" id="campus-matching">
+          <img src="images/matching-icon.png" alt="Campus Matching Icon" class="feature-icon">
+          <h3>Campus-Based Matching: Find Your Tribe</h3>
+          <p>Combat loneliness and build lasting friendships by connecting with students from your college and nearby institutions based on shared interests and values.</p>
+          <button class="cta-button">Get Matched Now</button>
         </div>
-        <div class="feature-card">
+
+        <div class="tab-panel" id="study-buddy">
           <img src="images/study-buddy-icon.png" alt="Study Buddy Icon" class="feature-icon">
-          <h3 class="feature-title">Study Buddy Finder</h3>
-          <p class="feature-description">Find peers in your major or class for study sessions.</p>
+          <h3>Study Buddy Finder: Ace Your Academics</h3>
+          <p>Find classmates in your major or courses for focused study sessions and collaborative learning.  Never struggle alone again!</p>
+          <button class="cta-button">Find a Study Buddy</button>
         </div>
-        <div class="feature-card">
+
+        <div class="tab-panel" id="mentorship">
+          <img src="images/mentorship-icon.png" alt="Mentorship Icon" class="feature-icon">
+          <h3>Mentorship Program: Get Guidance from the Best</h3>
+          <p>Connect with senior students who can provide valuable insights, advice, and support for your academic, career, and campus life journey.</p>
+          <button class="cta-button">Find a Mentor</button>
+        </div>
+
+        <div class="tab-panel" id="events-groups">
           <img src="images/events-icon.png" alt="Events Icon" class="feature-icon">
-          <h3 class="feature-title">Events and Groups</h3>
-          <p class="feature-description">Join or create campus events and interest-based groups.</p>
+          <h3>Events & Groups: Immerse Yourself in Campus Life</h3>
+          <p>Join or create campus events, interest-based groups, and study sessions. Discover new passions and connect with like-minded people.</p>
+          <button class="cta-button">Explore Events</button>
+        </div>
+
+        <div class="tab-panel" id="marketplace">
+          <img src="images/marketplace-icon.png" alt="Marketplace Icon" class="feature-icon">
+          <h3>Buy & Sell Marketplace: Save Money, Share Resources</h3>
+          <p>Trade textbooks, gadgets, and other essential items with trusted peers at affordable prices.  A sustainable way to support each other!</p>
+          <button class="cta-button">Browse Marketplace</button>
+        </div>
+
+        <div class="tab-panel" id="video-chat">
+          <img src="images/video-chat-icon.png" alt="Video Chat Icon" class="feature-icon">
+          <h3>Video Chat & Messaging: Stay Connected, Anywhere</h3>
+          <p>Communicate with friends, study partners, or mentors in real time, whether you're on campus or across the globe.</p>
+          <button class="cta-button">Start Chatting</button>
+        </div>
+
+        <div class="tab-panel" id="campus-stories">
+          <img src="images/stories-icon.png" alt="Campus Stories Icon" class="feature-icon">
+          <h3>Campus Stories: Share Your Experiences</h3>
+          <p>Share photos, updates, and stories about your campus life and connect with the wider Orbyt community.</p>
+          <button class="cta-button">View Stories</button>
         </div>
       </div>
     </div>
@@ -62,9 +109,9 @@
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Orbyt. All rights reserved.</p>
+      <p>© 2025 Orbyt. All rights reserved.</p>
       <p>
-        <a href="#" class="footer-link">Privacy Policy</a> | 
+        <a href="#" class="footer-link">Privacy Policy</a> |
         <a href="#" class="footer-link">Terms of Service</a>
       </p>
     </div>
