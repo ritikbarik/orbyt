@@ -1,2 +1,2 @@
-# orbity
-Super excited to share my first project: Orbity!  Built with HTML,JS and CSS.
+# orbyt
+Super excited to share my first project: Orbyt!  Built with HTML,JS and CSS.
