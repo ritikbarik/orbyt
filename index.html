@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Orbyt: Your Campus, Your Connections</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
   <!-- Dark Mode Toggle -->
   <button id="theme-toggle" class="theme-toggle">🌙</button>
 
   <!-- Header Section -->
-  <header class="header">
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero-title">Orbyt</h1>
-      <p class="hero-subtitle">Your Campus, Your Connections</p>
+  <header class="header" style="position: relative; background-color: var(--header-bg); padding: 80px 20px; border-bottom: 1px solid var(--card-border); display: flex; flex-direction: column; align-items: center; text-align: center;">
+    
+    <!-- Hamburger Icon (Centered at Top) -->
+    <div class="hamburger" onclick="toggleSidebar(this)" style="
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1001;
+    ">
+      <span style="height: 4px; width: 100%; background-color: var(--text-color); border-radius: 2px; transition: all 0.3s ease;"></span>
+      <span style="height: 4px; width: 100%; background-color: var(--text-color); border-radius: 2px; transition: all 0.3s ease;"></span>
+      <span style="height: 4px; width: 100%; background-color: var(--text-color); border-radius: 2px; transition: all 0.3s ease;"></span>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content" style="margin-top: 60px;">
+      <h1 class="hero-title" style="font-size: 4rem; font-weight: bold; margin: 0; letter-spacing: -0.05em; opacity: 0; animation: fadeIn 1s ease-out forwards; z-index: 1; text-align: center;">Orbyt</h1>
+      <p class="hero-subtitle" style="font-size: 1.5rem; margin: 15px 0 30px; font-style: italic; color: var(--secondary-color); opacity: 0; animation: fadeIn 1.5s ease-out forwards; z-index: 1; text-align: center;">Your Campus, Your Connections</p>
       <div class="cta-buttons">
         <button class="cta-button">Download on the App Store</button>
         <button class="cta-button">Get it on Google Play</button>
       </div>
     </div>
   </header>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Feature Tabs Section -->
   <section class="feature-tabs">
@@ -64,7 +87,7 @@
         <div class="tab-panel" id="study-buddy">
           <img src="images/study-buddy-icon.png" alt="Study Buddy Icon" class="feature-icon">
           <h3>Study Buddy Finder: Ace Your Academics</h3>
-          <p>Find classmates in your major or courses for focused study sessions and collaborative learning.  Never struggle alone again!</p>
+          <p>Find classmates in your major or courses for focused study sessions and collaborative learning. Never struggle alone again!</p>
           <button class="cta-button">Find a Study Buddy</button>
         </div>
 
@@ -85,7 +108,7 @@
         <div class="tab-panel" id="marketplace">
           <img src="images/marketplace-icon.png" alt="Marketplace Icon" class="feature-icon">
           <h3>Buy & Sell Marketplace: Save Money, Share Resources</h3>
-          <p>Trade textbooks, gadgets, and other essential items with trusted peers at affordable prices.  A sustainable way to support each other!</p>
+          <p>Trade textbooks, gadgets, and other essential items with trusted peers at affordable prices. A sustainable way to support each other!</p>
           <button class="cta-button">Browse Marketplace</button>
         </div>
 
@@ -118,5 +141,27 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+    function toggleSidebar(el) {
+      el.classList.toggle('open');
+      document.getElementById('sidebar').classList.toggle('open');
+    }
+  </script>
+<script>
+  function toggleSidebar(el) {
+    el.classList.toggle('open');
+    document.getElementById('sidebar').classList.toggle('open');
+  }
+
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

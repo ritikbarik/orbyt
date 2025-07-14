@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
       button.classList.add('active');
       const tabId = button.dataset.tab;
       document.getElementById(tabId).classList.add('active');
+      document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.sidebar').classList.remove('open');
+      document.querySelector('.hamburger').classList.remove('open');
+    });
+  });
+
     });
   });
 });
+
+  
